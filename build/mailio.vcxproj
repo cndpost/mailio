@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F4B8C8B4-B704-335B-9B05-F16748F9E73F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>mailio</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Administrator\source\repos\mailio\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mailio.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mailio</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mailio</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Administrator\source\repos\mailio\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mailio.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mailio</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mailio</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Administrator\source\repos\mailio\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">mailio.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">mailio</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mailio</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Administrator\source\repos\mailio\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">mailio.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">mailio</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mailio</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;C:\OpenSSL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";mailio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";mailio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\OpenSSL\lib\libcrypto_static.lib;C:\OpenSSL\lib\libssl_static.lib;C:\boost\lib\libboost_system-vc141-mt-gd-x32-1_70.lib;C:\boost\lib\libboost_date_time-vc141-mt-gd-x32-1_70.lib;C:\boost\lib\libboost_regex-vc141-mt-gd-x32-1_70.lib;C:\boost\lib\libboost_coroutine-vc141-mt-gd-x32-1_70.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Administrator/source/repos/mailio/build/Debug/mailio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Administrator/source/repos/mailio/build/Debug/mailio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <AdditionalDependencies>C:\OpenSSL\lib\libcrypto.lib;C:\OpenSSL\lib\libssl.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;C:\OpenSSL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";mailio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";mailio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\OpenSSL\lib\libcrypto.lib;C:\OpenSSL\lib\libssl.lib;C:\boost\lib\libboost_system-vc141-mt-gd-x64-1_70.lib;C:\boost\lib\libboost_date_time-vc141-mt-gd-x64-1_70.lib;C:\boost\lib\libboost_regex-vc141-mt-gd-x64-1_70.lib;C:\boost\lib\libboost_coroutine-vc141-mt-gd-x64-1_70.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Administrator/source/repos/mailio/build/Debug/mailio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Administrator/source/repos/mailio/build/Debug/mailio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";mailio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";mailio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\boost\lib\libboost_system-vc141-mt-x32-1_70.lib;C:\boost\lib\libboost_date_time-vc141-mt-x32-1_70.lib;C:\boost\lib\libboost_regex-vc141-mt-x32-1_70.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Administrator/source/repos/mailio/build/Release/mailio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Administrator/source/repos/mailio/build/Release/mailio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";mailio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";mailio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\boost\lib\libboost_system-vc141-mt-x32-1_70.lib;C:\boost\lib\libboost_date_time-vc141-mt-x32-1_70.lib;C:\boost\lib\libboost_regex-vc141-mt-x32-1_70.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Administrator/source/repos/mailio/build/Release/mailio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Administrator/source/repos/mailio/build/Release/mailio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";mailio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";mailio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\boost\lib\libboost_system-vc141-mt-x32-1_70.lib;C:\boost\lib\libboost_date_time-vc141-mt-x32-1_70.lib;C:\boost\lib\libboost_regex-vc141-mt-x32-1_70.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Administrator/source/repos/mailio/build/MinSizeRel/mailio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Administrator/source/repos/mailio/build/MinSizeRel/mailio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";mailio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";mailio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\boost\lib\libboost_system-vc141-mt-x32-1_70.lib;C:\boost\lib\libboost_date_time-vc141-mt-x32-1_70.lib;C:\boost\lib\libboost_regex-vc141-mt-x32-1_70.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Administrator/source/repos/mailio/build/MinSizeRel/mailio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Administrator/source/repos/mailio/build/MinSizeRel/mailio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";mailio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";mailio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\boost\lib\libboost_system-vc141-mt-x32-1_70.lib;C:\boost\lib\libboost_date_time-vc141-mt-x32-1_70.lib;C:\boost\lib\libboost_regex-vc141-mt-x32-1_70.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Administrator/source/repos/mailio/build/RelWithDebInfo/mailio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Administrator/source/repos/mailio/build/RelWithDebInfo/mailio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";mailio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";mailio_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\source\repos\mailio\include;C:\Users\Administrator\source\repos\mailio\build;C:\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\boost\lib\libboost_system-vc141-mt-x32-1_70.lib;C:\boost\lib\libboost_date_time-vc141-mt-x32-1_70.lib;C:\boost\lib\libboost_regex-vc141-mt-x32-1_70.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Administrator/source/repos/mailio/build/RelWithDebInfo/mailio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Administrator/source/repos/mailio/build/RelWithDebInfo/mailio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Administrator\source\repos\mailio\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Administrator/source/repos/mailio/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Administrator/source/repos/mailio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\bin\cmake.exe -SC:/Users/Administrator/source/repos/mailio -BC:/Users/Administrator/source/repos/mailio/build --check-stamp-file C:/Users/Administrator/source/repos/mailio/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\bin\cmake.exe -SC:/Users/Administrator/source/repos/mailio -BC:/Users/Administrator/source/repos/mailio/build --check-stamp-file C:/Users/Administrator/source/repos/mailio/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Administrator/source/repos/mailio/CMakeLists.txt;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindBoost.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindDoxygen.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindOpenSSL.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindThreads.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\GenerateExportHeader.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\exportheader.cmake.in;C:\Users\Administrator\source\repos\mailio\CMakeLists.txt;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeCCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeCXXCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeRCCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeSystem.cmake;C:\Users\Administrator\source\repos\mailio\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Administrator/source/repos/mailio/CMakeLists.txt;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindBoost.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindDoxygen.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindOpenSSL.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindThreads.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\GenerateExportHeader.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\exportheader.cmake.in;C:\Users\Administrator\source\repos\mailio\CMakeLists.txt;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeCCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeCXXCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeRCCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeSystem.cmake;C:\Users\Administrator\source\repos\mailio\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Administrator/source/repos/mailio/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Administrator/source/repos/mailio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\bin\cmake.exe -SC:/Users/Administrator/source/repos/mailio -BC:/Users/Administrator/source/repos/mailio/build --check-stamp-file C:/Users/Administrator/source/repos/mailio/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\bin\cmake.exe -SC:/Users/Administrator/source/repos/mailio -BC:/Users/Administrator/source/repos/mailio/build --check-stamp-file C:/Users/Administrator/source/repos/mailio/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Administrator/source/repos/mailio/CMakeLists.txt;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindBoost.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindDoxygen.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindOpenSSL.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindThreads.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\GenerateExportHeader.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\exportheader.cmake.in;C:\Users\Administrator\source\repos\mailio\CMakeLists.txt;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeCCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeCXXCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeRCCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeSystem.cmake;C:\Users\Administrator\source\repos\mailio\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Administrator/source/repos/mailio/CMakeLists.txt;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindBoost.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindDoxygen.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindOpenSSL.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindThreads.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\GenerateExportHeader.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\exportheader.cmake.in;C:\Users\Administrator\source\repos\mailio\CMakeLists.txt;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeCCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeCXXCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeRCCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeSystem.cmake;C:\Users\Administrator\source\repos\mailio\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/Administrator/source/repos/mailio/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Administrator/source/repos/mailio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\bin\cmake.exe -SC:/Users/Administrator/source/repos/mailio -BC:/Users/Administrator/source/repos/mailio/build --check-stamp-file C:/Users/Administrator/source/repos/mailio/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\bin\cmake.exe -SC:/Users/Administrator/source/repos/mailio -BC:/Users/Administrator/source/repos/mailio/build --check-stamp-file C:/Users/Administrator/source/repos/mailio/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Administrator/source/repos/mailio/CMakeLists.txt;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindBoost.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindDoxygen.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindOpenSSL.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindThreads.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\GenerateExportHeader.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\exportheader.cmake.in;C:\Users\Administrator\source\repos\mailio\CMakeLists.txt;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeCCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeCXXCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeRCCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeSystem.cmake;C:\Users\Administrator\source\repos\mailio\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Administrator/source/repos/mailio/CMakeLists.txt;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindBoost.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindDoxygen.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindOpenSSL.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindThreads.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\GenerateExportHeader.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\exportheader.cmake.in;C:\Users\Administrator\source\repos\mailio\CMakeLists.txt;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeCCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeCXXCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeRCCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeSystem.cmake;C:\Users\Administrator\source\repos\mailio\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/Administrator/source/repos/mailio/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Administrator/source/repos/mailio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\bin\cmake.exe -SC:/Users/Administrator/source/repos/mailio -BC:/Users/Administrator/source/repos/mailio/build --check-stamp-file C:/Users/Administrator/source/repos/mailio/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\bin\cmake.exe -SC:/Users/Administrator/source/repos/mailio -BC:/Users/Administrator/source/repos/mailio/build --check-stamp-file C:/Users/Administrator/source/repos/mailio/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Administrator/source/repos/mailio/CMakeLists.txt;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindBoost.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindDoxygen.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindOpenSSL.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindThreads.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\GenerateExportHeader.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\exportheader.cmake.in;C:\Users\Administrator\source\repos\mailio\CMakeLists.txt;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeCCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeCXXCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeRCCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeSystem.cmake;C:\Users\Administrator\source\repos\mailio\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Administrator/source/repos/mailio/CMakeLists.txt;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindBoost.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindDoxygen.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindOpenSSL.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\FindThreads.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\GenerateExportHeader.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Users\Administrator\Downloads\cmake-3.14.4-win64-x64\share\cmake-3.14\Modules\exportheader.cmake.in;C:\Users\Administrator\source\repos\mailio\CMakeLists.txt;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeCCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeCXXCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeRCCompiler.cmake;C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\3.14.4\CMakeSystem.cmake;C:\Users\Administrator\source\repos\mailio\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\source\repos\mailio\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Administrator\source\repos\mailio\src\base64.cpp" />
+    <ClCompile Include="C:\Users\Administrator\source\repos\mailio\src\binary.cpp" />
+    <ClCompile Include="C:\Users\Administrator\source\repos\mailio\src\bit7.cpp" />
+    <ClCompile Include="C:\Users\Administrator\source\repos\mailio\src\bit8.cpp" />
+    <ClCompile Include="C:\Users\Administrator\source\repos\mailio\src\codec.cpp" />
+    <ClCompile Include="C:\Users\Administrator\source\repos\mailio\src\dialog.cpp" />
+    <ClCompile Include="C:\Users\Administrator\source\repos\mailio\src\imap.cpp" />
+    <ClCompile Include="C:\Users\Administrator\source\repos\mailio\src\mailboxes.cpp" />
+    <ClCompile Include="C:\Users\Administrator\source\repos\mailio\src\message.cpp" />
+    <ClCompile Include="C:\Users\Administrator\source\repos\mailio\src\mime.cpp" />
+    <ClCompile Include="C:\Users\Administrator\source\repos\mailio\src\pop3.cpp" />
+    <ClCompile Include="C:\Users\Administrator\source\repos\mailio\src\quoted_printable.cpp" />
+    <ClCompile Include="C:\Users\Administrator\source\repos\mailio\src\q_codec.cpp" />
+    <ClCompile Include="C:\Users\Administrator\source\repos\mailio\src\smtp.cpp" />
+    <ClInclude Include="C:\Users\Administrator\source\repos\mailio\include\mailio\base64.hpp" />
+    <ClInclude Include="C:\Users\Administrator\source\repos\mailio\include\mailio\binary.hpp" />
+    <ClInclude Include="C:\Users\Administrator\source\repos\mailio\include\mailio\bit7.hpp" />
+    <ClInclude Include="C:\Users\Administrator\source\repos\mailio\include\mailio\bit8.hpp" />
+    <ClInclude Include="C:\Users\Administrator\source\repos\mailio\include\mailio\codec.hpp" />
+    <ClInclude Include="C:\Users\Administrator\source\repos\mailio\include\mailio\dialog.hpp" />
+    <ClInclude Include="C:\Users\Administrator\source\repos\mailio\include\mailio\imap.hpp" />
+    <ClInclude Include="C:\Users\Administrator\source\repos\mailio\include\mailio\mailboxes.hpp" />
+    <ClInclude Include="C:\Users\Administrator\source\repos\mailio\include\mailio\message.hpp" />
+    <ClInclude Include="C:\Users\Administrator\source\repos\mailio\include\mailio\mime.hpp" />
+    <ClInclude Include="C:\Users\Administrator\source\repos\mailio\include\mailio\pop3.hpp" />
+    <ClInclude Include="C:\Users\Administrator\source\repos\mailio\include\mailio\quoted_printable.hpp" />
+    <ClInclude Include="C:\Users\Administrator\source\repos\mailio\include\mailio\q_codec.hpp" />
+    <ClInclude Include="C:\Users\Administrator\source\repos\mailio\include\mailio\smtp.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Administrator\source\repos\mailio\build\ZERO_CHECK.vcxproj">
+      <Project>{B6F03BBA-B006-3D26-8507-5A8A1A8F682A}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,3 +1,49 @@
+Copyrght (c) 2019. John Xu - forked since 5/16/2019.
+
+Build instructions: 
+ 
+   0. get the latest source from the original master repo of mailio or from my following fork location: 
+
+             git clone https://github.com/cndpost/mailio
+
+   1. do not use the CMake-GUI which will fail to produce the initial vs project files and solution file. Use the command line version of cmake
+
+             cd to-path-of-mailio
+             mkdir build
+             cd to cmake installation path
+             cmake -S path-of-mailio  -B path-of-mailio\build
+
+      then the Visual Studio project files and solution file will be generated on the folder of path-of-mailio\build
+
+      The default cmake will produce a link to 32 bit, debug version of boost library. If you want
+      to make 64 bit version, or build release version, you need to change the boost library name accordingly,
+
+   2. check out and build boost library, and copy boost\boost\include to c:\boost\include and copy boost\stage\lib to c:\boost\lib
+      the command bootstrap.bat and .\b2.exe will build both 32 bit version and 64 bit version of the libraries. Just need to link to
+      32 bit version if you compiled mailio in 32 bit, link to 64 bit version if you compiled mailio in 64 bit version
+   
+   3. check out and build openssl library, and copy openssl\include to c:\openssl\include, and copy openssl\lib to c:\openssl\lib if the
+      build is for 32 bit. copy openssl\lib to c:\openssl\lib64 if the build is for 64 bit.
+      see the Readme in https://github.com/cndpost/openssl/readme for the instruction of building openssl for windows. 
+
+      Basically following command will build the 32 bit version:
+
+           perl Configure no-asm VC-WIN32
+           nmake
+
+      following command will build the 64 bit version:
+
+           perl Configure no-asm VC-WIN64A
+
+   4. Open the mailio.sln generated in above step 1, and manually add include folder c:\OpenSSL\include and C:\Boost to all the projects which the cmake did not
+      include them. And manually add c:\openssl\lib\libcrypto_static.lib and c:\openssl\lib\libssl_static.lib as the additional libraries for all the projects, assuming
+      we are building 32 bit. To build for 64 bit, link to C:\openssl\lib64\libcrypto_static.lib and C:\openssl\lib\lib64\libssl_static.lib instead.
+      
+   5. Then the build should pass. If you checked the mailio from my fork above, it already has the working project files and solution file. Above step 4 is needed
+      only if you checked out the repo from the original owner's repo. 
+
+===================Original Readme ============================================
+
 
 # mailio #
 
